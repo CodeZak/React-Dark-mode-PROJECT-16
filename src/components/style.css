@@ -1,0 +1,125 @@
+/* Font awsome icons */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Start Variables */
+:root {
+    --header-color: rgb(255, 255, 255);
+    --section-color: rgb(255, 255, 255);
+    --t-color: rgb(39, 156, 195);
+    --h-color: rgb(0, 0, 0);
+    --li-color : black;
+    --li-dot-color: rgb(42, 138, 190);
+    --disc-color: white;
+    --Cylinder-color: black;
+    --span-color: black;
+
+}
+
+.dark-theme {
+    --header-color: rgb(28, 28, 28);
+    --section-color: rgb(43, 48, 55);
+    --t-color: rgb(39, 156, 195);
+    --h-color: rgb(255, 255, 255);
+    --li-color : white;
+    --li-dot-color: rgb(42, 138, 190);
+    --disc-color: rgb(0, 0, 0);
+    --Cylinder-color: rgb(255, 255, 255);
+    --span-color: white;
+
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+/* End Global Rules */
+
+
+.container {
+    max-width: 600px;
+}
+header {
+    background-color: var(--header-color);
+    height: 70px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(159, 156, 156);
+}
+
+.title {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--t-color);
+}
+.toggle {
+    display: flex;
+}
+.boxContainer {
+    position: relative;
+    top: 1px;
+    margin: 0px 5px;
+    width: 40px;
+    height: 20px;
+    background-color: var(--Cylinder-color);
+    border-radius: 50px;
+}
+
+.ToggleDisc:hover,
+.boxContainer:hover {
+    cursor: pointer;
+}
+.ToggleDisc {
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--disc-color);
+    border-radius: 50%;
+    transition: 0.1s;
+    border: 1px solid var(--Cylinder-color);
+}
+
+.scroll {
+    left: Calc(100% - 20px);
+}
+
+section {
+    background-color:var(--section-color) ;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    color:var(--li-color)
+}
+ul li::before {
+    content: "\2022";
+    color: var(--li-dot-color);
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+h1 {
+    color: var(--h-color);
+    font-weight: 700;
+}
+
+span {
+    color: var(--span-color);
+}
